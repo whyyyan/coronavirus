@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+
+    <!-- 页面meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>核酸检测</title>
+    <meta name="description" content="AdminLTE2定制版">
+    <meta name="keywords" content="AdminLTE2定制版">
+
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+          name="viewport">
+
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/plugins/ionicons/css/ionicons.min.css" type="text/css">
+    <link rel="stylesheet" href="/plugins/iCheck/square/blue.css" type="text/css">
+    <link rel="stylesheet"
+          th:href="@{/plugins/morris/morris.css}" type="text/css">
+    <link rel="stylesheet"
+          th:href="@{/plugins/jvectormap/jquery-jvectormap-1.2.2.css}" type="text/css">
+    <link rel="stylesheet"
+          th:href="@{/plugins/datepicker/datepicker3.css}" type="text/css">
+    <link rel="stylesheet"
+          th:href="@{/plugins/daterangepicker/daterangepicker.css}">
+    <link rel="stylesheet"
+          th:href="@{/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css}" type="text/css">
+    <link rel="stylesheet"
+          th:href="@{/plugins/datatables/dataTables.bootstrap.css}" type="text/css">
+    <link rel="stylesheet"
+          th:href="@{/plugins/treeTable/jquery.treetable.css}" type="text/css">
+    <link rel="stylesheet"
+          th:href="@{/plugins/treeTable/jquery.treetable.theme.default.css}" type="text/css">
+    <link rel="stylesheet"
+          th:href="@{/plugins/select2/select2.css}" type="text/css">
+    <link rel="stylesheet"
+          th:href="@{/plugins/colorpicker/bootstrap-colorpicker.min.css}" type="text/css">
+    <link rel="stylesheet"
+          th:href="@{/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css}" type="text/css">
+    <link rel="stylesheet"
+          th:href="@{/plugins/adminLTE/css/AdminLTE.css}" type="text/css">
+    <link rel="stylesheet"
+          th:href="@{/plugins/adminLTE/css/skins/_all-skins.min.css}" type="text/css" >
+    <link rel="stylesheet"
+          th:href="@{/css/style.css}" type="text/css">
+    <link rel="stylesheet"
+          th:href="@{/plugins/ionslider/ion.rangeSlider.css}" type="text/css">
+    <link rel="stylesheet"
+          th:href="@{/plugins/ionslider/ion.rangeSlider.skinNice.css}" type="text/css">
+    <link rel="stylesheet"
+          th:href="@{/plugins/bootstrap-slider/slider.css}" type="text/css">
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+<div class="wrapper">
+
+    <div th:replace="commons/bar::#headerbar"></div>
+    <div  th:replace="commons/bar::#sidebar"></div>
+
+
+    <div class="content-wrapper">
+
+        <!-- 内容头部 -->
+        <section class="content-header">
+            <h1>
+                核酸检测科普 <small></small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a><i
+                        class="fa fa-dashboard"></i> 首页</a></li>
+                <li><a href="/dashboard/acidTest">核酸检测科普</a></li>
+
+            </ol>
+        </section>
+        <!-- 内容头部 /-->
+
+        <!-- 正文区域 -->
+        <section class="content">
+            <div class="box box-primary">
+                <div id="container" style="height:100%" class="mustknow">
+                    <div class="container" data-reactroot="">
+                        <div>
+                            <h2 searchId='0-1'>简要</h2>
+                    <p>英文名称：Nucleic Acid Test.</p>
+                    <p>别名：病毒核酸检测、DNA / RNA 检测、咽拭子检测、鼻咽拭子检测。</p>
+                    <p>就诊科室：各临床科室均可开具检查。</p>
+                    <h2 searchId='0-2'>什么是核酸检测？</h2>
+                    <p>核酸是生物体内的遗传物质，包括脱氧核糖核酸（DNA）和核糖核酸（RNA）。</p>
+                    <p>核酸检测是指利用生物医学技术和一些特殊试剂，检测人体内是否存在某种遗传物质以进一步判断是否有病原微生物的感染。</p>
+                    <p>此外，核酸检测还应用于遗传疾病诊疗、肿瘤分子分型等。</p>
+                    <h2 searchId='0-3'>核酸检测的原理是什么？</h2>
+                    <p>核酸检测最常见的方法是实时荧光定量 PCR 技术（简称 RT-PCR），通过实时检测 PCR 扩增反应中的荧光信号变化，从而实现对样本中核酸浓度的定量及定性分析，荧光信号强度与检测到的核酸序列成正比。</p>
+                    <h2 searchId='0-4'>核酸检测怎么采集样本？</h2>
+                    <p>根据采样路径不同，临床采集核酸的常见方法主要是口咽拭子和鼻咽拭子，适用于绝大部分人群。另外根据临床需要，还有肛拭子、抽血（血清学）核酸检测。</p>
+                    <p>与口咽拭子相比，鼻咽拭子采样时停留的时间较长，在流感、冠状病毒等病原体的检测中，鼻咽拭子的阳性率要高于口咽拭子，漏诊率低。</p>
+                    <ol>
+                        <li><strong>鼻咽试子</strong></li>
+                    </ol>
+                    <ul>
+                        <li>
+                            <p>首先稳定被采集人的头部，头稍后仰约 70°，工作人员一手拿长棉签样的拭子从鼻孔进入，与上颚平行，沿鼻道底部向后缓缓深入，直到遇到阻力或约等于采集者耳朵外口到鼻孔的距离。</p>
+                        </li>
+                        <li>
+                            <p>到达鼻咽底部时，轻轻摩擦或旋转几周，停留几秒钟以吸收分泌物。</p>
+                        </li>
+                        <li>
+                            <p>然后一边旋转一边慢慢取出拭子，将拭子头浸入含 2～3 mL 病毒保存液的管中。</p>
+                        </li>
+                        <li>
+                            <p>如果一侧鼻孔堵塞，或者标本取样不足，可以使用相同的棉签从另一侧鼻孔收集标本；但如果第一次收集取样充足，则不需要再从另一侧收集标本。</p>
+                        </li>
+                    </ul>
+                    <p><img src="https://file1.dxycdn.com/2021/0121/446/4434848789097100643-22.jpg" alt="image"></p>
+                    <center data-tomark-pass=""> 图片来源：参考文献[1]</center>
+                    <ol start="2">
+                        <li><strong>口咽试子</strong></li>
+                    </ol>
+                    <ul>
+                        <li>操作简单，临床上较为常用。</li>
+                        <li>被检测者先用生理盐水漱口，检查时头部微仰，嘴张大，并发「啊」音，采集人员将拭子从口部进入，分别在咽后部和扁桃体区域来回擦拭至少 3 次，同时注意避免接触舌头、牙齿和牙龈。</li>
+                        <li>然后取出拭子，将拭子头浸入含 2～3 mL 病毒保存液的管中，尾部弃去，旋紧管盖。</li>
+                    </ul>
+                    <ol start="3">
+                        <li><strong>肛试子</strong>：</li>
+                    </ol>
+                    <ul>
+                        <li>采集方法：检测人员在肛门中用棉签进行采样，或被检测人员刚好有大便，将大便标本送去检测。肛拭子与咽拭子检测只是标本采集部位不同，其他流程都是一样的，可以在 12 小时或 24 小时内出具结果。</li>
+                        <li>适合人群：已经进行集中隔离观察的人群、医院发热门诊中高度怀疑的人群、有消化道症状的人群、入境人员、密接人员等重点人群，同时采集咽拭子和肛拭子。</li>
+                        <li>结果解释：很多感染者咽部核酸转阴后，其肛拭子检测还是阳性的，而且比咽拭子阳性持续时间更长。</li>
+                        <li>优点：将咽拭子和肛试子一起检测，可提高检出率，减少漏诊的比例。</li>
+                        <li>缺点：采样不方便，患者可能存在心理上的尴尬等不适。</li>
+                    </ul>
+                    <ol start="4">
+                        <li><strong>血清学检测</strong>：</li>
+                    </ol>
+                    <ul>
+                        <li>采集方法：采集肘部静脉血 3～5 mL，待血液凝固后离心取血清检测。</li>
+                        <li>适合人群：作为咽拭子核酸检测的补充方法，检测接种过新冠疫苗后机体是否产生保护性抗体。</li>
+                        <li>检测方法：酶联免疫吸附试验法、化学发光免疫分析法、胶体金免疫层析法。应用最广泛的是胶体金免疫层析法。</li>
+                        <li>结果解释：患者被新冠病毒感染后，抗体检测阳性提示被检查者处在恢复期，或者曾经感染过，或者接种过疫苗，需要结合核酸检测结果作出综合分析。</li>
+                        <li>优点：操作便捷，检测迅速。当核酸检测阴性时，把 IgM 和 IgG 抗体检测增加进去，可以弥补核酸检测容易造成漏诊的缺点。《新型冠状病毒肺炎诊疗方案（试行第七版）》明确将抗体检测结果纳入确诊病例的诊断标准，以及疑似病例的排除标准。</li>
+                        <li>缺点：在病毒感染早期可能检测不出来，不能及早发现感染者。可作为核酸检测的补充方式，但不能代替。因方法学受限，抗体检测「假阳性」和「假阴性」不能避免，也不适用于流行病学调查。</li>
+                    </ul>
+                    <h2 searchId='0-5'>核酸检测有哪几种技术？</h2>
+                    <p>核酸标本采集后，下一步就被送到检验科了。检验科通过一些复杂的生物医学技术和特殊的试剂去检测是否有某种微生物的遗传物质存在，然后出具结果供临床参考。</p>
+                    <p>主要方法包括实时荧光定量 PCR 技术（RT-PCR）、环介导等温扩增技术（LAMP）和高通量测序技术（NGS），其中 PCR 技术具有特异性强、灵敏度高、定量准确的优点，最为常用。</p>
+                    <p>NGS 技术尤其擅长检测未知病原体，具有直接准确的优点，但是其成本较高、操作复杂、耗时长，无法在临床上大规模应用。</p>
+                    <h2 searchId='0-6'>混采检测与单管检测有些什么区别？</h2>
+                    <p>混采检测指将多人的样本，目前国家对新冠核酸检测建议 10 合 1 混采检测，即连续采集 10 份混合入同一检测管开展检测，提高检测效率，降低检测成本。如采集管内拭子不足 10 支，应做好特殊标记并记录。</p>
+                    <p>混采和单管检测的实验室检测时间是一样的，不影响出具检测报告的时间。</p>
+                    <h2 searchId='0-7'>混采检测结果阳性怎么办？</h2>
+                    <p>若混采检测结果阴性，则可出具阴性报告。</p>
+                    <p>若检测结果为阳性、灰区或单个靶标阳性，则需要通知相关部门对该混采管的 10 个受试者暂时单独隔离，并重新采集单管拭子进行复核。</p>
+                    <p>单管复核阳性者按规定隔离。</p>
+                    <h2 searchId='0-8'>核酸检测的一般流程是怎么样的？</h2>
+                    <p><strong>开单子</strong>：如果是普通病人、陪护家属或者健康人想要拿到核酸检测结果，可以有以下几种办法：</p>
+                    <ol>
+                        <li>找门诊医生（一般门诊医生都可以开具，建议找个病号少的科室，免得过久等待）挂号，找医生开具核酸检测单，记得提前准备好身份证或就诊卡。</li>
+                        <li>在医院自助服务系统（院内门诊大厅或关注医院各自的预约平台）自己预约打印核酸检测单。</li>
+                        <li>如果仍不清楚，可以打医院服务热线咨询，或者询问门诊大厅的工作人员和窗口工作人员。</li>
+                        <li>如果是发热病人，出门前切记戴好口罩，避免与人面对面交流，可直接到医院发热门诊说明情况，开具检查单。</li>
+                        <li>最好去当地有一定规模的医院或有检验资质的机构开单，有的医院 / 机构可能不具备相关资格。在「丁香医生-疫情地图-<a href="https://ncov.dxy.cn/ncovh5/view/pneumonia_detection">核酸检测</a>」页面可以查询有检测资质的机构或医院。</li>
+                    </ol>
+                    <p><strong>采样本</strong>：采样人员会核对并记录身份信息，根据检查的需求不同，可能会采集人体的血液、痰液、分泌物（鼻腔、咽腔）、尿液、粪便等标本。</p>
+                    <p>新冠核酸检测应当采集呼吸道标本，一般采集上呼吸道标本（首选鼻咽拭子等），重症病例优先采集下呼吸道标本（呼吸道吸取物、灌洗液、深咳痰液等）。</p>
+                    <p><strong>送样本</strong>：采集完的核酸检测标本需要放入密封的保存袋中。比如新冠核酸检测置于「新冠」标识转运箱内，需 4 ℃ 保存，由专门的工作人员及时送到检验科检验。</p>
+                    <p><strong>做检验</strong>：先设置 56 ℃ / 30 分钟杀死病毒，然后提取病毒的核酸物质，放入自动化的检验仪器上机检测（PCR 技术）。</p>
+                    <p><strong>出报告</strong>：根据荧光扩增曲线的特异性和结果值发出检验报告（阳性或阴性）。</p>
+                    <p><strong>取报告</strong>：本人或亲属根据各医疗机构的规定，在特定地点及有效时间内取回检验报告，或者在网上进行结果查询（有的地方没有开通网络查询功能）。</p>
+                    <h2 searchId='0-9'>核酸检测多久出结果？</h2>
+                    <p>正常的核酸检测是一个工作日就可以出结果，检测者当天或者第二天可以得知结果，根据检测结果决定是否再次复查。</p>
+                    <p>对于目前的新冠核酸检测，发热门诊、急诊患者在 6 小时内出具核酸检测结果；对于普通门诊、住院患者及陪护人员等人群，原则上在 12 小时内出具结果；对于「愿检尽检」人群，一般在 24 小时内出具结果。</p>
+                    <h2 searchId='0-10'>核酸检测结果有效期是多久？</h2>
+                    <p>根据各个地方的要求不同，核酸结果的有效期从 72 小时到 7 天不等。</p>
+                    <h2 searchId='0-11'>核酸检测阴性就是没有感染吗？</h2>
+                    <p>核酸检测结果阴性也不能排除病毒感染，需要排除可能产生「假阴性」的因素，包括：</p>
+                    <ul>
+                        <li>病程过早，采样时间不合适；</li>
+                        <li>采集方法、采集过程、标本类型、送检、检测试剂等因素都可能造成影响。</li>
+                    </ul>
+                    <h2 searchId='0-12'>核酸检测阳性一定是感染了吗？</h2>
+                    <p>如果核酸检测结果是阳性，应该先排除交叉污染、试剂污染或实验室环境污染，复查后再发出最终的检验报告。临床医生需要结合临床症状、最终报告来诊断疾病。</p>
+                    <p>如果单纯检测结果阳性，临床称「无症状感染者」，到底会不会发病，只有时间才能告诉我们。但「无症状感染者」同样具有传染性，所以需要按规定隔离、观察。</p>
+                    <h2 searchId='0-13'>新冠核酸检测阳性就可以确诊新冠吗？</h2>
+                    <p>不可以。</p>
+                    <p>确诊新冠还要结合流行病学史、影像学检查及临床表现等综合判断。例如：</p>
+                    <ul>
+                        <li>发病前 14 天内是否有新冠病毒感染患者接触史，是否有病例报告社区的旅行史或居住史，是否曾接触过来自有病例报告社区的发热或有呼吸道症状的患者，是否为聚集性发病；</li>
+                        <li>是否具有新冠肺炎 CT 影像学特征；</li>
+                        <li>是否具有发热和（或）呼吸道症状等新冠肺炎相关临床表现。</li>
+                    </ul>
+                    <p>有时还可能会通过抽血查新型冠状病毒特异性 IgM 抗体和 IgG 抗体来进行辅助诊断。当核酸检测或其它方法检测新冠病毒阳性，并且符合流行性学病史，有症状，才能判定为<a href="https://app.dxy.cn/aspirin/nativejump?type=disease&amp;id=24677">确诊新冠肺炎</a>。</p>
+                    <h2 searchId='0-14'>核酸检测的费用是多少？</h2>
+                    <p>检测项目不同，费用也有所不同，同时也受地区、检测机构和医保报销等影响。</p>
+                    <p>新冠核酸检测（包括试剂费 + 检测费）由当地医保局和卫生健康委进行价格调整，以其价格为准，在此给出的参考价格是 50～200 元人民币。</p>
+                    <h2 searchId='0-15'>核酸检测是什么样的感觉？</h2>
+                    <p>鼻拭子采集是把长长的拭子塞进鼻咽底部，还要旋转几周，停留几秒，很多人会有一定的不适感或酸痛感，检测期间可能会出现打喷嚏、流鼻涕、酸痛感、流眼泪、呛水感等，甚至少部分人有鼻出血的情况，检测完毕后这种不适感觉会持续一段时间，过后可自行恢复正常。</p>
+                    <p>咽拭子采集是把长长的拭子伸进口腔内大约到咽后壁的位置，采集过程中可能会有恶心、想吐的感觉，采集完毕放松后一般没有明显不适。</p>
+                    <p>但是检测感觉也是因人而异的，有的人反应很明显，不适感很强，有的人反应轻微，有时也和操作手法有关系。建议采样过程中尽量放松，转移注意力，可减轻不适感。</p>
+                    <h2 searchId='0-16'>核酸检测会有不良反应吗？</h2>
+                    <p>除了上述采集标本过程中的不适感觉，无其它后续不良反应。</p>
+                    <h2 searchId='0-17'>哪些情况下不建议或者暂缓做核酸检测？</h2>
+                    <ol>
+                        <li>核酸检测前服用针对性的抗病毒、抗细菌等药物时，可能会影响检测结果，建议由医生评估是否能继续检测。</li>
+                        <li>鼻咽部有出血、水肿、堵塞等异常情况的人群不建议做鼻咽拭子核酸检测。</li>
+                        <li>咽部刺激后容易呕吐的人，有条件可以选择鼻咽拭子核酸检测，或者在进行咽拭子前 2 小时不要进食（太饱）。</li>
+                        <li>检测前不建议抽烟、喝酒等，或暂缓 30 分钟后再检测，以免影响检测阳性率。</li>
+                    </ol>
+                    <h2 searchId='0-18'>核酸检测完后需要注意什么吗？</h2>
+                    <p>没有特殊注意事项，按规定隔离或等待检测结果即可。如果有鼻咽部不适症状，及时咨询医生。</p>
+
+
+
+            </div>
+
+        </section>
+
+    </div>
+</div>
+<script th:src="@{/plugins/jQuery/jquery-2.2.3.min.js}"></script>
+<script th:src="@{/plugins/jQueryUI/jquery-ui.min.js}"></script>
+<script>
+    $.widget.bridge('uibutton', $.ui.button);
+</script>
+<script th:src="@{/plugins/bootstrap/js/bootstrap.min.js}"></script>
+<script th:src="@{/plugins/raphael/raphael-min.js}"></script>
+<script th:src="@{/plugins/morris/morris.min.js}"></script>
+<script th:src="@{/plugins/sparkline/jquery.sparkline.min.js}"></script>
+<script th:src="@{/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js}"></script>
+<script th:src="@{/plugins/jvectormap/jquery-jvectormap-world-mill-en.js}"></script>
+<script th:src="@{/plugins/knob/jquery.knob.js}"></script>
+<script th:src="@{/plugins/daterangepicker/moment.min.js}"></script>
+<script th:src="@{/plugins/daterangepicker/daterangepicker.js}"></script>
+<script th:src="@{/plugins/daterangepicker/daterangepicker.zh-CN.js}"></script>
+<script th:src="@{/plugins/datepicker/bootstrap-datepicker.js}"></script>
+<script
+        th:src="@{/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js}"></script>
+<script
+        th:src="@{/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js}"></script>
+<script th:src="@{/plugins/slimScroll/jquery.slimscroll.min.js}"></script>
+<script th:src="@{/plugins/fastclick/fastclick.js}"></script>
+<script th:src="@{/plugins/iCheck/icheck.min.js}"></script>
+<script th:src="@{/plugins/adminLTE/js/app.min.js}"></script>
+<script th:src="@{/plugins/treeTable/jquery.treetable.js}"></script>
+<script th:src="@{/plugins/select2/select2.full.min.js}"></script>
+<script th:src="@{/plugins/colorpicker/bootstrap-colorpicker.min.js}"></script>
+<script
+        th:src="@{/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.zh-CN.js}"></script>
+<script th:src="@{/plugins/bootstrap-markdown/js/bootstrap-markdown.js}"></script>
+<script
+        th:src="@{/plugins/bootstrap-markdown/locale/bootstrap-markdown.zh.js}"></script>
+<script th:src="@{/plugins/bootstrap-markdown/js/markdown.js}"></script>
+<script th:src="@{/plugins/bootstrap-markdown/js/to-markdown.js}"></script>
+<script th:src="@{/plugins/ckeditor/ckeditor.js}"></script>
+<script th:src="@{/plugins/input-mask/jquery.inputmask.js}"></script>
+<script
+        th:src="@{/plugins/input-mask/jquery.inputmask.date.extensions.js}"></script>
+<script th:src="@{/plugins/input-mask/jquery.inputmask.extensions.js}"></script>
+<script th:src="@{/plugins/datatables/jquery.dataTables.min.js}"></script>
+<script th:src="@{/plugins/datatables/dataTables.bootstrap.min.js}"></script>
+<script th:src="@{/plugins/chartjs/Chart.min.js}"></script>
+<script th:src="@{/plugins/flot/jquery.flot.min.js}"></script>
+<script th:src="@{/plugins/flot/jquery.flot.resize.min.js}"></script>
+<script th:src="@{/plugins/flot/jquery.flot.pie.min.js}"></script>
+<script th:src="@{/plugins/flot/jquery.flot.categories.min.js}"></script>
+<script th:src="@{/plugins/ionslider/ion.rangeSlider.min.js}"></script>
+<script th:src="@{/plugins/bootstrap-slider/bootstrap-slider.js}"></script>
+<script>
+
+    function detail(id) {
+        location.href = "/touch/info/"
+            + id;
+
+    }
+    function changePageSize() {
+        //获取下拉框的值
+        var pageSize = $("#changePageSize").val();
+
+        //向服务器发送请求，改变没页显示条数
+        location.href = "/touch/list?page=1&size="
+            + pageSize;
+    }
+    $(document).ready(function() {
+        // 选择框
+        $(".select2").select2();
+
+        // WYSIHTML5编辑器
+        $(".textarea").wysihtml5({
+            locale : 'zh-CN'
+        });
+    });
+
+    // 设置激活菜单
+    function setSidebarActive(tagUri) {
+        var liObj = $("#" + tagUri);
+        if (liObj.length > 0) {
+            liObj.parent().parent().addClass("active");
+            liObj.addClass("active");
+        }
+    }
+
+    $(document)
+        .ready(
+            function() {
+
+                // 激活导航位置
+                setSidebarActive("admin-datalist");
+
+                // 列表按钮
+                $("#dataList td input[type='checkbox']")
+                    .iCheck(
+                        {
+                            checkboxClass : 'icheckbox_square-blue',
+                            increaseArea : '20%'
+                        });
+                // 全选操作
+                $("#selall")
+                    .click(
+                        function() {
+                            var clicks = $(this).is(
+                                ':checked');
+                            if (!clicks) {
+                                $(
+                                    "#dataList td input[type='checkbox']")
+                                    .iCheck(
+                                        "uncheck");
+                            } else {
+                                $(
+                                    "#dataList td input[type='checkbox']")
+                                    .iCheck("check");
+                            }
+                            $(this).data("clicks",
+                                !clicks);
+                        });
+            });
+</script>
+
+</body>
+
+</html>
